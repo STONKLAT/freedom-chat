@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/fontawesome.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="icon.png" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+		<title>Freedombrowser Chat</title>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<img width="500" height="200" src="logo.png">
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<div class="form-control">
+						<label for="username">Username:</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+					</div>
+          <!-- <div class="form-control">
+						<label for="room">Custom Room</label>
+						<input
+							type="text"
+							name="room"
+							id="room"
+							placeholder="Enter room name..."
+							 Hi 
+						/>
+					</div> -->
+				
+            
+           <div class="form-control">
+            <label for="room">Enter Default Rooms or Type Custom:</label>
+            <input list="room"  name="room" type="text" id="room2"  placeholder="Enter room name..." required>
+           <datalist name="room" id="room" >
+                <option id="General" value="General">
+           </datalist>
+					</div> 
+					<button type="submit" class="btn">Join Chat</button>
+				
+			</main>
+		</div>
+	</body>
+</html>
